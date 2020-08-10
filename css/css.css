@@ -1,0 +1,577 @@
+*{
+  margin:0px;
+padding:0px; /* borramos el estilo predeterminado*/
+
+
+}
+body{ /* cambiamos el estilo de body*/
+/* #C2BBF1;*/
+    background: #B2ABE4; /*color de fondo*/
+    color:aliceblue; /* color de todas las letras*/
+
+}
+.contenedor{ /* estilo del contenedor*/
+   width: 100%; /* ancho*/
+    max-width: 767px; /* el ancho maximo que tomara*/
+    margin:auto; /* margen */
+    margin-top: 20px; /* margen hacia arriba*/
+    margin-bottom: 20px; /* margin inferior*/
+ 
+
+}
+.contenedor img{ /* estilo de la imagen del contenedor*/
+      width: 100%; /* ancho*/
+    max-width: 767px; /*ancho maximo*/
+    margin:auto; /* margen*/
+    margin-top: 20px;/* margen hacia arriba*/
+    margin-bottom: 20px;/* margin inferior*/
+}
+header{ /* estilo de header*/
+    width: 100%; /* ancho*/
+  height: 80px; /* alto*/
+ background: #48CFBD; /* color de fondo*/
+ background:rgba(109,186,231,0.5);
+}
+header img{
+ 
+}
+header h1{ /* estilo del titulo de header*/
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+display: none;
+    margin-top: -40px;
+	animation:backInRight;
+	animation-duration:2s;
+
+}
+
+#btn-menu{
+     
+    display: none; /* aqui indica que no despliegue el boton de menu */
+}
+
+header label{ /* estilo de header label*/
+   
+display:none; /* indicamos que no se despliegue*/
+    width: 48px; /*ancho*/
+    height: 48px;/* alto*/
+    padding: 0px; /*espacio de relleno*/
+    
+    
+}
+header label:hover{ /* accion en el header*/
+    cursor: pointer; /* cursor, encima*/
+   
+}
+.menu ul{ /*estilo menu lista no ordenada*/
+    margin: 0; /* margen*/
+    list-style: none;/*estilo de lista*/
+    padding: 0; /*espacio de relleno*/
+    display: flex; /*estilo menu lista no ordenada*/
+   
+}
+.menu li:hover{ /*accion en el menu li*/
+  cursor: pointer; /*cursor encima*/
+    background:rgba(0,0,0,0.3); /*opacidad*/
+    
+}
+.menu li{ /*estilo de los li */
+    font-size: 20px; /*tamaño de la letra*/
+    font-family: 'Indie Flower', cursive;/*estilo de fuente*/
+    text-align: center; /*texto alineado al centro*/
+    flex-grow: 1;/* espaciado*/
+     border-right:1px solid #fff; /*borde hacia la derecha*/
+}
+.menu li a{
+    display: block; /*indica que usaremos todoel ancho disponible */
+    padding: 20px 20px; /*relleno hacia arriba y hacia la derecha*/
+    color: aliceblue;/*color de la letra*/
+    text-decoration: none; /*no decoracion en las letras*/
+    
+}
+
+.menu li ul{
+	display: none;
+	position: absolute;
+	width: 170px;
+	background: #B079F2;
+}
+
+.menu li:hover > ul{
+	
+display: block;
+}
+.porta{
+	
+	margin-left: 130px;
+	font-size: 20px;
+	
+}
+nav{ /*nav, guarda el menu*/
+    background: #B079F2; /*color de fondo*/
+    height: 80px; /*alto*/
+
+
+}
+nav h2{ /*estilo de titulo*/
+
+     font-size: 40px; /*tamaño de letra*/
+    text-align: center; /*texto alineado*/
+    line-height: 60px;/*espacio entre lineas*/
+
+}
+
+.logo{ /*caja logo*/
+   height: 200px; /*alto*/
+    width: 100%; /*ancho*/
+   
+     //*background: #A3E9E4;*//
+}
+.logo img{ /*imegen logo*/
+   text-align: center; /*alienado al centro*/
+   height: 400px; /*alto*/
+    width: 100%; /*ancho*/
+   margin-top: -90px;/*margen hacia arriba*/
+	animation:backInRight;
+	animation-duration:1.5s;
+}
+.contenido{ /* estilo de contenido*/
+  width: 100%; /*ancho*/
+    height: 280px; /*alto*/
+    float:left; /*hacia la izquierda*/
+  
+    margin-top: 40px; /* margen hacia arriba*/
+    margin-right: 10px;/*margen hacia la derecha*/
+margin-bottom: 10px; /*margen inferior*/
+    overflow: hidden; /*elemento escondido*/
+
+}
+.contenido img{ /*imagen de contenido*/
+    margin-left: 40px; /*margen hacia la izquierda*/
+     width: 90%; /*ancho*/
+    height: 250px; /*alto*/
+border-radius: 7px; /*radio del contenido*/
+	
+}
+.contenido ul{ /*estilo del ul de contenido*/
+    display: flex; /*flexiblidad*/
+    padding: 0; /*espacio de relleno*/
+    width: 300%; /*ancho*/
+    animation: cambio 20s infinite; /*animacion dentro del ul*/
+    animation-direction: alternate; /*direccion de la animacion*/
+}
+
+.contenido li{ /*estilo de las li*/
+      width: 90%; /*ancho*/
+    list-style: none;/*estilo de lista*/
+	animation: fadeIn;
+	animation-duration:2s;
+}
+
+@keyframes cambio{ /*ordenamiento de imagenes*/
+    0%{ margin-left: 0;} /*cada porcentaje respresenta el tiempo de visibilidad de cada imagen*/
+    20%{ margin-left: 0;}/*cada porcentaje respresenta el tiempo de visibilidad de cada imagen*/
+    
+    
+    30%{ margin-left: -100%;}/*cada porcentaje respresenta el tiempo de visibilidad de cada imagen*/
+    40%{ margin-left: -100%;}/*cada porcentaje respresenta el tiempo de visibilidad de cada imagen*/
+    
+    50%{ margin-left: -200%;}/*cada porcentaje respresenta el tiempo de visibilidad de cada imagen*/
+    60%{ margin-left: -200%;}/*cada porcentaje respresenta el tiempo de visibilidad de cada imagen*/
+}
+.uno{ /*estilo de caja uno*/
+    display: flex;/*flexibilidad de la caja*/
+    align-items: center; /*elementos hacia el centro*/
+     position: relative; /*posicion relativa*/
+     width: 40%; /*ancho*/
+    height: 400px; /*alto*/
+    float:left; /*hacia la izquierda*/
+   
+        margin-top: 10px; /*margen hacia arrriba*/
+    margin-left: 10px; /*margen hacia la izquierda*/
+margin-bottom: 10px;/*margen inferior */
+}
+.uno img{ /*imagen de caja uno*/
+    
+     width: 400px; /*ancho*/
+    height: 400px; /*alto*/
+   transition: all 0.5s; /*tiempo de transicion*/
+    
+}
+.uno img:hover{ /*accion de la imagen*/
+    
+     transform: scale(1.15); /*escala de imagen aumenta*/
+    
+}
+
+.Novedades{
+	background:#ffff;
+margin-top:90px; 
+     width: 100%; /*ancho*/
+    height: 300px; /*alto*/
+    float:left; /*hacia la derecha*/
+        background:rgba(134,134,134,0.3);
+margin-bottom: 50px;
+	
+}
+.Novedades img{
+width:30%;/*ancho*/
+  float: left;
+	margin-top: 0;
+    margin-left: 7;
+    margin-bottom: 5px;
+	 animation:fadeInRight;
+  animation-duration:2s;
+
+	 transition: all 0.5s;
+	
+}
+
+.Novedades img:hover{
+ transform: scale(1.10);
+}
+
+.Novedades p{
+font-family: 'Quicksand', sans-serif;
+      color: #EFF8FD;
+   text-align: justify;
+    font-size: 18px;
+    font-weight: 100px;
+}
+
+
+
+#new {
+	height: 72px;
+	width: 72px;
+	float:left;
+	margin-left:-70px;
+	margin-top: -50px;
+	position: absolute;
+	
+	 animation:heartBeat;
+  animation-duration:2s;
+	animation-iteration-count: 3;
+
+}
+.titulo3{
+	    font-family: 'Quicksand', sans-serif;
+    color: #ffff;
+      font-size: 30px;
+    text-align: center;
+ margin-bottom: 20px;
+ font-weight: 100px;
+	 animation:tada;
+  animation-duration:2s;
+	animation-iteration-count:4;
+
+}
+
+.at{
+	color: aquamarine;
+	text-decoration: none;
+}
+
+
+    .dos{ /*caja numero dos*/
+        display: flex; /*flexibilidad*/
+    align-items: center; /*elementos al centro*/
+     position: relative; /*posicion relativa*/
+     width: 40%; /*ancho*/
+    height: 400px; /*alto*/
+    float:left; /*hacia la derecha*/
+    
+        margin-top: 10px;
+    margin-left: 40px;
+margin-bottom: 10px;
+}
+.dos img{/*imagen de caja dos*/
+    transition: all 0.5s; /*tiempo de transicion*/
+    
+     width: 400px;/*ancho*/
+    height: 400px;/*alto*/
+    position: relative;/*posicion relativa*/
+}
+.dos img:hover{ /*accion de la imagen*/
+    
+    transform: scale(1.15); /*escala de imagen aumenta*/
+    
+}
+    
+    .tres{/*caja numero tres*/
+display: flex;/*flexibilidad*/
+    align-items: center;/*elementos al centro*/
+     position: relative; /*posicion relativa*/
+     width: 40%; /*ancho*/
+    height: 400px;/*alto*/
+    float:left; /*hacia la derecha*/
+    
+        margin-top: 10px;
+    margin-left: 10px;
+margin-bottom: 10px;
+}
+.tres img{ /*imagen de caja tres*/
+    transition: all 0.5s; /*tiempo de transicion*/
+      position: relative;/*posicion relativa*/      
+     width: 400px;/*ancho*/
+    height: 400px;/*alto*/
+    
+}
+.tres img:hover{ /*accion de la imagen*/
+    
+     transform: scale(1.15); /*escala de imagen aumenta*/
+    
+}
+.textos{  /*estilo de los textos h*/
+    color: gray;  /*color de letra*/
+    font-size: 30px;  /*tamaño de la letra*/
+    position: absolute;  /*posicion ansoluta*/
+  text-align: center;  /*escala de imagen aumenta*/
+    padding: 10px 120px;  /* espacio de relleno */
+    font-family: 'Reenie Beanie', cursive;  /*tipo de fuente*/
+} 
+
+/*.cuatro{
+     width: 40%;
+     width: 40%;
+    height: 200px;
+    float:left;
+   
+        margin-top: 10px;
+    margin-left: 10px;
+margin-bottom: 10px;
+}
+.cuatro img{
+     width: 200px;
+    height: 200px;
+    
+}
+
+.cinco{
+     width: 30%;
+    height: 200px;
+    float:left;
+    background: #C4437E;
+        margin-top: 10px;
+    margin-left: 10px;
+margin-bottom: 10px;
+}
+.seis{
+     width: 30%;
+    height: 200px;
+    float:left;
+    background: #C4437E;
+        margin-top: 10px;
+    margin-left: 10px;
+margin-bottom: 10px;
+}*/
+
+
+aside{  /*estilo del aside*/
+    width: 100%;  /*ancho*/
+   height: 300px;  /*alto*/
+    
+    margin-top: 10px;  /*margen hacia arriba*/
+
+    float: right;  /*hacia la derecha*/
+}
+aside h4{  /*titulo del aside*/
+  font-size: 20px;  /*tamaño de letra*/
+text-align: center;  /*texto alineado hacia el centro*/
+line-height:500px;  /*espaciado entre lineas*/
+    
+
+}
+
+footer{  /*estilo del footer*/
+  margin-top: 40px;  /*margen hacia arriba*/
+   height: 150px;  /*alto */
+padding: 20px; /*ancho */
+  clear: both;  /*separacion de los flotantes */
+  background:rgba(134,134,134,0.3);  /*color y opacidad*/
+
+  
+
+}
+footer h5{  /*titulo */
+text-align: justify;  /*titulo justificado*/
+  font-size: 40px;  /*tamaño del texto */
+text-align: center;  /*texto alineado al centro */
+margin-top: 20px;  /*margen hacia arriba */
+font-family: 'Reenie Beanie', cursive;  /*fuente de la letra */
+
+}
+.insta{  /*caja instagram */
+   padding: 3px 20px;  /*espacio de relleno */
+
+    width: 20%;  /*ancho */
+
+    height: 100px;  /*alto */
+    float: right;  /*hacia la derecha */
+}
+
+.insta img{  /*imagen de instagram */
+    align-content: center;  /*contenido al centro */
+    width: 72px;  /*ancho */
+   height: 72px; /*alto */
+}
+
+
+.gugul{/*caja google */
+   
+    width: 20%;/*ancho */
+    padding: 3px 20px;/*espacio de relleno */
+    height: 100px;/*alto */
+    float: right; /*hacia la derecha */
+}
+
+.gugul img{/*imagen de google */
+    width: 72px; /*ancho */
+   height: 72px;/*alto */
+}
+
+.face{/*caja facebook */
+    padding: 3px 50px;/*espacio de relleno */
+ 
+    float: right;/*hacia la derecha */
+    width: 20%;/*ancho */
+   padding: 3px 20px;/*espacio de relleno */
+    height: 100px;/*alto */
+}
+
+.face img{ /*imagen de facebook */
+    
+    width: 72px;/*ancho */
+   height: 72px;/*alto */
+}
+@media only screen and (max-width:767px) { /*indicamos que  a este ancho cambiran los elementos seleccionados*/
+
+  
+    .logo{ /*caja logo*/
+   display: none;
+    }
+     header h1{
+display: block;
+    
+    }
+   
+   header label{
+        
+   display: block; 
+         
+        
+    }
+    .menu{
+       position: absolute; 
+   background: #fff;
+        width: 20%;
+         margin-left: -60%;
+        transition: all 0.5s;
+    }
+    
+    
+    .menu ul{
+       flex-direction: column; 
+       
+         background: #B079F2;
+    }
+    .menu li{
+         border-top:1px solid #fff; 
+        
+    }
+    
+  #btn-menu:checked ~ .menu {
+        margin: 0px;
+        
+    }
+    
+.contenido img{ /*imagen de contenido*/
+     /*margen hacia la izquierda*/
+		margin-right: 30px;
+     width: 100%; /*ancho*/
+    height: 200px; /*alto*/	
+border-radius: 3px; /*radio del contenido*/
+	
+}
+	
+	.contenido{
+		
+  width: 100%;
+		height: 230px;
+		
+		
+border-bottom: 1px solid #fff;
+}
+	.contenido li{ /*estilo de las li*/
+		margin-right: 50px;
+      width: 90%; /*ancho*/
+    list-style: none;/*estilo de lista*/
+}
+.Novedades{
+	
+     width: 100%; /*ancho*/
+    height: 350px; /*alto*/
+   
+	
+}
+    .uno{
+     width: 40%;
+    height: 200px;
+    float:left;
+    
+        margin-top: 10px;
+    margin-left: 10px;
+margin-bottom: 10px;
+}
+.uno img{
+     width: 200px;
+    height: 200px;
+    
+}
+    .dos{
+     width: 40%;
+    height: 200px;
+    float:left;
+    
+        margin-top: 10px;
+    margin-left: 10px;
+margin-bottom: 10px;
+}
+.dos img{
+     width: 200px;
+    height: 200px;
+    
+}
+    
+    .tres{
+     width: 40%;
+    height: 200px;
+    float:left;
+    
+        margin-top: 10px;
+    margin-left: 10px;
+margin-bottom: 10px;
+}
+.tres img{
+     width: 200px;
+    height: 200px;
+    
+}
+    .textos{
+    position: absolute;
+  text-align: center;
+        font-size: 20px;
+    padding: 10px 60px;
+}
+	
+    aside{
+   
+width: 100%;
+    float: left;
+    }
+    footer{
+
+  
+
+}
