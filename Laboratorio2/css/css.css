@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+     
+}
+
+
+body{
+   margin: 0;
+           
+}
+.hola{
+	margin-top: 10px;
+	margin-left:30px;
+	
+	height: 90px;
+	width: 150px;
+	font-size: 18px;
+	border-radius: 4px;
+	font-family: cursive;
+	color:#ffff;
+	 
+}
+.at{
+	text-decoration: none;
+}
+.hola img{
+	transition: all 0.5s;
+}
+.hola img:hover{
+ transform: scale(1.10);
+}
+
+.formulario{
+   background-image: url(../img/23327.png);
+    width: 300px;
+    margin: auto;
+    height: 425px;
+ /*   max-width: 90%; */
+    margin-top:40px;
+    padding: 20px;
+  /*  background: #34495e; */
+    border-radius: 10px;
+}
+.inicioimg{
+    height: 128px;
+    width: 128px;
+    border-radius: 200px;
+    margin-left: 86px;
+}
+#Inicio{
+    color:#14A6AC;
+    display: block;
+   font-size:25px;
+   margin-left: 70px;
+font-family: 'arial';
+    margin-top: 30px;
+}
+#user{
+     border-radius:2px;
+    display: block;
+    width: 240px;
+    height: 34px;
+  font-size: 15px;
+   margin-left: 27px;
+font-family: 'arial';
+     margin-top: 20px;
+    border-style: none;
+}
+
+#contra{
+    
+    display: block;
+    width: 240px;
+    height: 34px;
+  border-radius:2px;
+    border-style: none;
+   margin-left: 27px;
+font-family: 'arial';
+     margin-top: 20px;
+    
+}
+#enviar{
+    background: #0E4C57;
+    color: #ffff;
+    height: 40px;
+    width: 90px;
+    margin-right: 32px;
+    font-family: 'arial';
+    float: right;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-style: none;
+}
+[type="checkbox"]{
+    display: none;
+}
+
+#cl{
+    font-family: 'arial';
+    font-size: 13px;
+    color: #FFFFD3;
+    padding-left: 1.9em;
+    position: relative;
+    
+}
+
+#cl:before{
+    font-size:20px;
+    background:#ffff;
+   content:'';
+    border: 3px solid #9e9e9e;
+    border-radius:1px;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    left: 0;
+    
+}
+
+[type="checkbox"]:checked + #cl:before{
+     
+    border-color:azure;
+    color: aqua;
+   /*content:'\f00c';*/
+   font-family: 'Balsamiq Sans', cursive;
+    background-color:#41A48F;
+    
+}
+#pos{
+    
+   width:145px;
+    margin-left:30px;
+    margin-top: 30px;
+    float: left;
+}
+#cuenta{
+    font-family: 'arial';
+    color: #FFFFD3;
+    font-size: 13px;
+    float: left;
+    margin-top: 25px;
+    margin-left:155px;
+    
+}
+.a{
+    text-decoration: none;
+    color:#FFFFD3; 
+}
+
+#uno{
+color: aliceblue;
+font-family: 'arial';
+font-size: 13px;
+   
+}
+
+#dos{
+color: aliceblue;
+font-family: 'arial';
+font-size: 13px;
+   
+}
